@@ -14,14 +14,14 @@ const data: RootObject = await response.json();
 
 <div class="relative bg-HeaderGloal">
   <div class="absolute inset-0 z-10 bg-HeaderGloal"></div>
-  <div class="relative md:h-[400px] h-[350px]">
+  <div class="relative md:h-[80vh] h-[350px]">
     <img src={image} alt={title} class="object-cover w-full h-full" />
   </div>
   <div
-    class="absolute inset-0 z-10 md:h-[400px] h-[350px] md:p-2 p-4 md:w-[80%] w-full mx-auto flex items-center justify-start flex-wrap"
+    class="absolute inset-0 z-10 md:h-[80vh] h-[350px] md:p-2 p-4 md:w-[80%] w-full mx-auto flex items-center justify-start flex-wrap"
   >
     <div
-      class="flex flex-col items-start justify-center border-l-4 border-secondary pl-4 gap-4 md:w-[50%] w-full"
+      class="flex flex-col items-end justify-center pl-4 gap-4 md:w-[50%] w-full"
     >
       <h1 class="md:text-[46px] text-[30px] font-bold text-white capitalize">
         {title}

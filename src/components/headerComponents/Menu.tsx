@@ -80,7 +80,11 @@ export default function Menu({
       icon: "Videos",
       statusRoutes: data?.widgets?.landingVideos && data.videos?.landingVideos,
     },
-        {
+    {
+      name: "Resources",
+      path: "/resources",
+    },
+    {
       name: "Blog",
       path: "/blog",
       icon: "Blog",
@@ -94,7 +98,7 @@ export default function Menu({
   ];
 
   return (
-    <div className={`flex md:gap-6 gap-[24px] ${styleList}`}>
+    <div className={`flex md:gap-3 gap-[24px] ${styleList}`}>
       {routes.map((item, index) => {
         if (item.statusRoutes === undefined || item.statusRoutes === true) {
           return (
