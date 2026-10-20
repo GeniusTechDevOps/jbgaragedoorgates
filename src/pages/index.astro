@@ -14,6 +14,7 @@ import BlockTwo from "../components/home/BlockTwo.astro";
 import IconGlobal from "../components/global/IconGlobal";
 import ColorPalette from "../components/home/ColorPalette.astro";
 import HighlightedText from "../components/global/TitleColor";
+import PostComponent from "../components/home/PostComponent";
 
 let API_URL = import.meta.env.API_URL;
 // Realiza la llamada a la API
@@ -80,7 +81,7 @@ const aboutSection = data?.sectionsHomeAbout.filter(
       </div>
     ) : null
   }
-
+  <PostComponent dataBlocks={dataBlocks} data={data} client:load />
   <Directorios client:only data={data} />
   <ValuesHome data={data} />
 
